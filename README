@@ -18,8 +18,8 @@ reservations
 
 ```bash
 python -m reservations.test.hotels_test
-python -m reservations.test.customer_test
-python -m reservations.test.reservation_test
+python -m reservations.test.customers_test
+python -m reservations.test.reservations_test
 ```
 
 # Lint

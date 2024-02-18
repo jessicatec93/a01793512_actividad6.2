@@ -44,6 +44,17 @@ class Testcustomers(unittest.TestCase):
         }
         self.assertEqual(self.status_ok, self.customer.create(body))
 
+    def test_add_method_incorrect_age(self):
+        """
+            Unit test on creating a record in the incorrect age customer entity
+        """
+        body = {
+            'name': self.fake.name(),
+            'address': self.fake.address(),
+            'age': 5
+        }
+        self.assertRaises(TypeError, self.customer.create, body)
+
     def test_add_method_returns_incorrect_result(self):
         """
             Incorrect unit test when sending wrong payload

@@ -30,6 +30,9 @@ class Customer():
         """
         try:
             index = str(len(self.customers) + 1)
+            age = int(data["age"])
+            if age < 18 or age > 90:
+                raise TypeError("Invalid age")
             customer = {
                 'name': data["name"],
                 'address': data["address"],
