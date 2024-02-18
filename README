@@ -29,8 +29,8 @@ python -m reservations.test.reservations_test
 ```bash
 pylint reservations.hotels
 pylint reservations.test.hotels_test
-pylint reservations.hotels
-pylint reservations.test.hotels_test
+pylint reservations.customers
+pylint reservations.test.customers_test
 pylint reservations.hotels
 pylint reservations.test.hotels_test
 ```
@@ -42,8 +42,8 @@ pylint reservations.test.hotels_test
 ```bash
 flake8 .\reservations\hotels.py
 flake8 .\reservations\test\hotels_test.py
-flake8 .\reservations\hotels.py
-flake8 .\reservations\test\hotels_test.py
+flake8 .\reservations\customers.py
+flake8 .\reservations\test\customers_test.py
 flake8 .\reservations\hotels.py
 flake8 .\reservations\test\hotels_test.py
 ```
