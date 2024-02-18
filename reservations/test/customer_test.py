@@ -14,7 +14,7 @@ from faker import Faker
 from reservations.customer import Customer
 
 
-class Testcustomer(unittest.TestCase):
+class TestCustomer(unittest.TestCase):
     """
         Class that applies unit tests on the customer entity
     """
