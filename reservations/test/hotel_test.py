@@ -11,10 +11,10 @@ import unittest
 
 from faker import Faker
 
-from reservations.hotels import Hotel
+from reservations.hotel import Hotel
 
 
-class TestHotels(unittest.TestCase):
+class TestHotel(unittest.TestCase):
     """
         Class that applies unit tests on the hotel entity
     """
