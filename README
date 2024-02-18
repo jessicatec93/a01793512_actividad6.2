@@ -1,0 +1,17 @@
+# Library 
+pip install Faker
+pip install pylint
+
+# Unit tests
+
+## To run unit tests you must:
+
+´´´
+python -m reservations.test.hotels_test
+´´´
+´´´
+python -m reservations.test.customer_test
+´´´
+´´´
+python -m reservations.test.reservation_test
+´´´
