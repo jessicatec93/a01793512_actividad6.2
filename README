@@ -31,8 +31,8 @@ pylint reservations.hotel
 pylint reservations.test.hotel_test
 pylint reservations.customer
 pylint reservations.test.customer_test
-pylint reservations.hotels
-pylint reservations.test.hotels_test
+pylint reservations.reservation
+pylint reservations.test.reservation_test
 ```
 
 # Flake8 
@@ -44,6 +44,6 @@ flake8 .\reservations\hotel.py
 flake8 .\reservations\test\hotel_test.py
 flake8 .\reservations\customer.py
 flake8 .\reservations\test\customer_test.py
-flake8 .\reservations\hotels.py
-flake8 .\reservations\test\hotels_test.py
+flake8 .\reservations\reservation.py
+flake8 .\reservations\test\reservation_test.py
 ```
