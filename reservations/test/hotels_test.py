@@ -11,10 +11,10 @@ import unittest
 
 from faker import Faker
 
-from reservations.hotels import Hotels
+from reservations.hotels import Hotel
 
 
-class TestCalculate(unittest.TestCase):
+class TestHotels(unittest.TestCase):
     """
         Class that applies unit tests on the hotel entity
     """
@@ -28,7 +28,7 @@ class TestCalculate(unittest.TestCase):
         self.status_ok = {"status": "ok"}
         with open(self.path_file, 'r', encoding="utf-8") as file:
             self.hotels = json.load(file)
-        self.hotel = Hotels()
+        self.hotel = Hotel()
         self.fake = Faker()
 
     def test_add_method_returns_correct_result(self):

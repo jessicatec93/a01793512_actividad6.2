@@ -8,7 +8,7 @@ CRUD operations on the hotel entity
 import json
 
 
-class Hotels():
+class Hotel():
     """
     Class that carries out operations on the hotel entity.
     """
@@ -89,4 +89,4 @@ class Hotels():
 
 
 if __name__ == '__main__':
-    calc = Hotels()
+    calc = Hotel()
