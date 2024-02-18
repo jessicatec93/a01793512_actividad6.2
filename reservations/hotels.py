@@ -68,7 +68,9 @@ class Hotels():
                 raise TypeError(f"The hotel with id was not found: {index}")
             return self.hotels[index]
         except Exception as e:
-            raise TypeError(f"I found an error when searching for the hotel with Id {index}") from e
+            raise TypeError(
+                f"I found an error when getting the hotel with Id {index}"
+            ) from e
 
     def delete(self, index):
         """
@@ -81,7 +83,9 @@ class Hotels():
             self.hotels.pop(index, None)
             return self.response_ok
         except Exception as e:
-            raise TypeError(f"I found an error when searching for the hotel with Id {index}") from e
+            raise TypeError(
+                f"I found an error when deleting the hotel with Id {index}"
+            ) from e
 
 
 if __name__ == '__main__':

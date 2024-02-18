@@ -46,7 +46,7 @@ class TestCalculate(unittest.TestCase):
 
     def test_add_method_returns_incorrect_result(self):
         """
-            Incorrect unit test when sending wrong payload when creating a hotel record
+            Incorrect unit test when sending wrong payload
         """
         self.assertRaises(TypeError, self.hotel.create, {})
 
@@ -54,7 +54,7 @@ class TestCalculate(unittest.TestCase):
         """
             Unit test on updating a record in the correct hotel entity
         """
-        if   len(self.hotels) > 0:
+        if len(self.hotels) > 0:
             index = random.choice(list(self.hotels.keys()))
             init = 50
             end = 500
@@ -74,9 +74,9 @@ class TestCalculate(unittest.TestCase):
 
     def test_update_method_returns_incorrect_result(self):
         """
-            Incorrect unit test when sending wrong payload when updating a hotel record
+            Incorrect unit test when sending wrong payload
         """
-        if  len(self.hotels) > 0:
+        if len(self.hotels) > 0:
             index = random.choice(list(self.hotels.keys()))
             self.assertRaises(TypeError, self.hotel.update, index, {})
 
@@ -84,7 +84,7 @@ class TestCalculate(unittest.TestCase):
         """
             Unit test on getting a record in the correct hotel entity
         """
-        if  len(self.hotels) > 0:
+        if len(self.hotels) > 0:
             index = random.choice(list(self.hotels.keys()))
             response = self.hotels[str(index)]
             self.assertEqual(response, self.hotel.get(index))
@@ -100,7 +100,7 @@ class TestCalculate(unittest.TestCase):
         """
             Unit test on deleting a record in the correct hotel entity
         """
-        if  len(self.hotels) > 0:
+        if len(self.hotels) > 0:
             index = random.choice(list(self.hotels.keys()))
             self.assertEqual(self.status_ok, self.hotel.delete(index))
 
@@ -110,6 +110,7 @@ class TestCalculate(unittest.TestCase):
         """
         index = 702545
         self.assertRaises(TypeError, self.hotel.delete, index)
+
 
 if __name__ == '__main__':
     unittest.main()

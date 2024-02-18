@@ -1,17 +1,49 @@
 # Library 
 pip install Faker
 pip install pylint
+pip install flake8
 
+# Project structure
+```bash
+reservations
+|__database
+|____table.txt
+|__test
+|____test.py
+|_class.py
+```
 # Unit tests
 
-## To run unit tests you must:
+## Run unit tests while at the root:
 
-´´´
+```bash
 python -m reservations.test.hotels_test
-´´´
-´´´
 python -m reservations.test.customer_test
-´´´
-´´´
 python -m reservations.test.reservation_test
-´´´
+```
+
+# Lint
+
+## Run pylint while at the root:
+
+```bash
+pylint reservations.hotels
+pylint reservations.test.hotels_test
+pylint reservations.hotels
+pylint reservations.test.hotels_test
+pylint reservations.hotels
+pylint reservations.test.hotels_test
+```
+
+# Flake8 
+
+## Run pylint while at the root:
+
+```bash
+flake8 .\reservations\hotels.py
+flake8 .\reservations\test\hotels_test.py
+flake8 .\reservations\hotels.py
+flake8 .\reservations\test\hotels_test.py
+flake8 .\reservations\hotels.py
+flake8 .\reservations\test\hotels_test.py
+```
